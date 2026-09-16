@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+   
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+
+<style>
+
+body {
+    margin: 0;
+     background-color: #f0eeea;
+}
+
+.mi-encabezado {
+    background-color: #036436;
+
+    background-image: 
+        url('decoracion/orilla.png'),
+        url('decoracion/orilla2.png');
+
+    background-repeat: no-repeat, no-repeat;
+
+    background-position: center top, center bottom;
+
+    background-size: 100% 89%, 100% 55%;
+
+    padding: 5px 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+.mi-encabezado h1 {
+    margin: 0;
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+}
+
+.letra-rye {
+    font-family: "Rye", serif;
+    font-weight: 400;
+    font-size: 2.5rem;
+    margin-top: 5px;
+}
+
+.letra-times {
+    font-family: "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 2rem;
+    margin-top: 4px;
+    text-align: center;
+}
+
+
+nav {
+    background-color: #f7f7f7;
+    border-bottom: 15px solid #f7f7f7;
+    border-top: 10px solid #f7f7f7;
+    text-align: center;
+    padding: 0;
+}
+
+nav a {
+    display: inline-block;
+    background-color: #c8d1d9;
+    color: #000000;
+    text-decoration: none;
+    font-family: Rye, sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 10px 60px;
+    border-radius: 55px;
+    margin: 0 20px;
+}
+
+nav a:hover {
+    background-color: #f87778;
+    color: #ffffff;
+}
+
+.inicio {
+    text-align: center;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.inicio img {
+    height: 230px;
+    display: block;
+    margin: 25px auto;
+}
+
+.inicio p {
+    margin: 20px auto;
+}
+
+footer {
+    position: relative;
+    background-color: #b11a1c;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    margin-top: 20px;
+    font-family: "Times New Roman", serif;
+    font-size: 1.7 rem;
+}
+
+footer p {
+    margin: 6px;
+}
+
+.flor-izquierda {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 110px;
+}
+
+.flor-derecha {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 110px;
+    transform: rotate(180deg);
+}
+
+.personaje {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+    width: 90%;
+    margin: 40px 0 30px 50px;
+}
+
+.personaje-imagen {
+    width: 180px;
+    text-align: center;
+}
+
+.personaje-imagen img {
+    width: 140px;
+    height: auto;
+}
+
+.personaje-imagen h2 {
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.3rem;
+    margin-top: 10px;
+}
+
+.personaje-texto {
+    flex: 1;
+    text-align: left;
+    font-family: "Times New Roman", sans-serif;
+    font-size: 1.5rem;
+}
+
+.mh {
+    box-shadow: 5px 5px 10px #555555;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+    <img src="decoracion/banderas.png" alt="banderas decorativas" 
+         style="position: absolute; top: -40px; left: -30px; height: 190px; transform: rotate(-7deg); z-index: 10;">
+
+    <img src="decoracion/banderas.png" alt="banderas decorativas" 
+         style="position: absolute; top: -40px; left: 1100px; height: 190px; transform: rotate(20deg); z-index: 10;">
+
+
+    <div class="mi-encabezado">
+
+        <h1>Personajes</h1>
+
+        <p class="letra-rye">importantes</p>
+
+    </div>
+</header>
+
+<nav>
+    <a href="index.html.html">Inicio</a>
+    <a href="fechas.html">Fechas</a>
+    <a href="personajes.html">Personajes</a>
+    <a href="historia.html">Historia</a>
+    <a href="datos.html">Datos y mitos</a>
+</nav>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/MiguelHidalgo.png" alt="Miguel Hidalgo">
+        <h2>Miguel Hidalgo</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Miguel Hidalgo y Costilla nació en 1753 en Guanajuato. Fue sacerdote, maestro y uno de los principales líderes de la Independencia de México. El 16 de septiembre de 1810 realizó el llamado Grito de Dolores, con el que inició el movimiento de Independencia. Durante la lucha impulsó medidas para mejorar las condiciones de indígenas y mestizos, como la abolición de la esclavitud y de algunos tributos. Fue capturado en 1811 y ejecutado el 30 de julio de 1811. Después de su muerte, fue reconocido como Padre de la Patria y el 16 de septiembre se convirtió en el Día de la Independencia.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/JMMorelos.png" alt="Jose Maria Morelos">
+        <h2>Jose Maria Morelos</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            José María Morelos y Pavón nació en 1765 en Valladolid, actual Morelia. Fue sacerdote, político y militar, y se convirtió en uno de los principales líderes de la Independencia de México después de la muerte de Miguel Hidalgo. Dirigió varias campañas militares y logró importantes victorias, especialmente en el sur del país. En 1813 convocó el Congreso de Chilpancingo, donde presentó sus ideas sobre la independencia, la igualdad y la organización de un nuevo gobierno. Fue capturado en 1815 y ejecutado el 22 de diciembre de ese mismo año.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/JosefaOrtiz.png" alt="Josefa Ortiz">
+        <h2>Josefa Ortiz</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Josefa Ortiz de Domínguez nació en 1768 en Valladolid, hoy Morelia. Fue una patriota y heroína de la Independencia de México, conocida como “La Corregidora de Querétaro”. Participó en la Conspiración de Querétaro junto con otros personajes que buscaban iniciar un levantamiento contra el gobierno virreinal. Cuando descubrió que la conspiración había sido descubierta, logró enviar un aviso a Miguel Hidalgo y otros insurgentes, lo que permitió adelantar el inicio de la lucha de Independencia. Fue arrestada y permaneció varios años recluida. Después de ser liberada, rechazó reconocimientos y recompensas por su participación. Murió en 1829 en Ciudad de México.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/IgnacioAllende.png" alt="Ignacio Allende">
+        <h2>Ignacio Allende</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Ignacio Allende nació en 1769 en San Miguel el Grande, Guanajuato. Fue un militar independentista y uno de los principales protagonistas de la primera etapa de la Independencia de México. Participó en la Conspiración de Querétaro y apoyó a Miguel Hidalgo en el inicio del movimiento en 1810. Allende prefería una estrategia militar y llegó a proponer ocupar la Ciudad de México. Después de varias derrotas, fue capturado junto con Hidalgo en Acatita de Baján, Coahuila, en 1811. Fue juzgado y fusilado ese mismo año, junto con Ignacio Aldama y Mariano Jiménez. Sus restos descansan en la Columna de la Independencia en Ciudad de México.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/JuanAldama.png" alt="Juan Aldama">
+        <h2>Juan Aldama</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Juan Aldama nació alrededor de 1769 en San Miguel el Grande, Guanajuato. Fue un patriota mexicano y militar que participó en las conspiraciones de Valladolid y Querétaro. Apoyó el levantamiento dirigido por Miguel Hidalgo y asumió un importante papel militar durante el inicio de la Independencia de México, participando en batallas como Monte de las Cruces y el asalto de Guanajuato. Después de varias derrotas, se retiró hacia el norte, pero fue capturado en Acatita de Baján junto con otros líderes insurgentes. Fue acusado de traición y fusilado en Chihuahua el 26 de junio de 1811.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/VicenteGuerrero.png" alt="Vicente Guerrero">
+        <h2>Vicente Guerrero</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Vicente Guerrero nació en 1782 en Tixtla. Fue militar y político mexicano y uno de los principales líderes de la Independencia de México. Se unió al movimiento independentista y, después de la captura y ejecución de José María Morelos en 1815, continuó luchando por la independencia, incluso cuando el movimiento parecía estar perdido. En 1821, apoyó a Agustín de Iturbide en el Plan de Iguala, que contribuyó a lograr la independencia de México. Más tarde fue presidente de México en 1829, destacando por decretar la abolición de la esclavitud. Fue derrocado ese mismo año y posteriormente capturado y fusilado en Cuilapan el 14 de febrero de 1831.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/AgustindeIturbide.png" alt="Agustin de Iturbide">
+        <h2>Agustin de Iturbide</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Agustín de Iturbide nació en 1783 en Valladolid, actual Morelia. Fue un militar mexicano y una figura importante en la consumación de la Independencia de México. Al principio combatió contra los insurgentes, pero en 1821 se unió a Vicente Guerrero y juntos impulsaron el Plan de Iguala, que establecía la independencia de México. Al frente del Ejército Trigarante, logró entrar a la Ciudad de México el 27 de septiembre de 1821, marcando la consumación de la Independencia. En 1822 fue proclamado emperador de México con el nombre de Agustín I, pero tuvo que abdicar en 1823. Regresó a México en 1824, fue detenido y fusilado ese mismo año.
+        </p>
+    </div>
+</div>
+
+<div class="personaje">
+    <div class="personaje-imagen">
+        <img class="mh" src="personajes/LeonaVicario.png" alt="Leona Vicario">
+        <h2>Leona Vicario</h2>
+    </div>
+    <div class="personaje-texto">
+        <p>
+            Leona Vicario nació en 1789 en Ciudad de México. Fue una heroína de la Independencia de México y apoyó la causa insurgente enviando dinero, medicinas, noticias e información a los rebeldes. También ayudó a fugitivos y colaboró con los insurgentes a pesar de los riesgos. En 1813 fue capturada y encarcelada, pero logró escapar y continuó apoyando el movimiento independentista. Después de consumarse la Independencia, recibió una compensación por los bienes que había perdido. Murió en 1842 en Ciudad de México y sus restos se encuentran en la Columna de la Independencia.
+        </p>
+    </div>
+</div>
+
+
+
+<footer>
+    <p>Ailyn Ramirez Villa</p>
+    <p>24308051281329</p>
+    <p>5 - J </p>
+    <p> Programación</p>
+
+    <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores">
+
+    <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores">
+
+</footer>
+
+
+</body>
+</html>
