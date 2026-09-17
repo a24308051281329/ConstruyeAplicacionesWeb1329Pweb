@@ -2,52 +2,61 @@
 <!DOCTYPE html>
 <html>
 <head>
-   
+
+
+/*------------------ Tipo de letra rye ---------------------------------*/
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-
+/*----------------------------------------------------------------------*/   
 <style>
 
 body {
     margin: 0;
-     background-color: #f0eeea;
+     background-color: #f0eeea; /*--- color de fondo ---*/
 }
 
+   
 .mi-encabezado {
-    background-color: #036436;
+    background-color: #036436; /* color del encabezado */
 
+   /*---------- decoraciones del encabezado -------------*/
     background-image: 
-        url('decoracion/orilla.png'),
-        url('decoracion/orilla2.png');
-
+        url('decoracion/orilla.png'),  
+        url('decoracion/orilla2.png');1
+ 
     background-repeat: no-repeat, no-repeat;
 
     background-position: center top, center bottom;
 
     background-size: 100% 89%, 100% 55%;
-
-    padding: 5px 20px;
-    text-align: center;
-    color: #ffffff;
+ /*---------------------------------------------------*/
+   
+    padding: 5px 20px;  /* tamaño de letra del ecabezado*/
+    text-align: center;  /*se centra la letra */
+    color: #ffffff; /* color de letra del encabezado*/
 }
 
-
+/*---- Tipo de letra del encabezado -----*/
 .mi-encabezado h1 {
     margin: 0;
-    font-family: "Rye", serif;
-    font-weight: 400;
+    font-family: "Rye", serif; /*letra rye*/
+    font-weight: 400; /*grosor*/
     font-style: normal;
-    font-size: 6rem;
+    font-size: 6rem; /*tamaño*/
 }
+/*---------------------------------------*/
 
+/*-------------- letra rye -------------------*/
 .letra-rye {
     font-family: "Rye", serif;
     font-weight: 400;
     font-size: 2.5rem;
     margin-top: 5px;
 }
+ /*--------------------------------------------*/
 
+ /*-------- letra times new roman ------------*/  
 .letra-times {
     font-family: "Times New Roman", serif;
     font-weight: 400;
@@ -55,50 +64,61 @@ body {
     margin-top: 4px;
     text-align: center;
 }
+ /*--------------------------------------------*/
 
-
+/*----------------------- navegador -----------------------*/
 nav {
-    background-color: #f7f7f7;
-    border-bottom: 15px solid #f7f7f7;
-    border-top: 10px solid #f7f7f7;
-    text-align: center;
-    padding: 0;
+    background-color: #f7f7f7; /*color de fondo*/
+    border-bottom: 15px solid #f7f7f7; /* color de fondo de abajo*/
+    border-top: 10px solid #f7f7f7; /* color de fondo de arriba */
+    text-align: center; /* se centra */
+    padding: 0; /* hace que no se agrupen los textos*/
 }
+ /*--------------------------------------------------------*/
 
+/*--------------- botones del navegador ---------------*/
 nav a {
     display: inline-block;
-    background-color: #c8d1d9;
-    color: #000000;
+    background-color: #c8d1d9;  /* color de los botones*/
+    color: #000000; /* color de la letra de los botones*/
     text-decoration: none;
-    font-family: Rye, sans-serif;
-    font-weight: 400;
+    font-family: Rye, sans-serif; /* tipo de letra */
+    font-weight: 400; 
     font-size: 1.5rem;
-    padding: 10px 60px;
-    border-radius: 55px;
-    margin: 0 20px;
+    padding: 10px 60px; /* aleja el contenido de los bordes */
+    border-radius: 55px; /* se usa para redondear las esquinas */
+    margin: 0 20px; /* epacio de ariiba y de las orillas */
 }
+ /*---------------------------------------------------*/
 
-nav a:hover {
-    background-color: #f87778;
-    color: #ffffff;
-}
+ /*---------- cambio de color de los botones ------------*/
+   nav a:hover {
+       background-color: #f87778; /* color del boton en rojo */
+       color: #ffffff;  /* color de la letra blanco */
+   }
+ /*------------------------------------------------------*/
 
+ /*---------------------------------------------------*/
 .inicio {
-    text-align: center;
-    max-width: 1000px;
-    margin: 30px auto;
+    text-align: center; /* texto centrado */
+    max-width: 1000px; /* ancho de la pagina */
+    margin: 30px auto; /* espacio de arriba */
 }
+ /*---------------------------------------------------*/
 
+ /*---------------------------------------------------*/
 .inicio img {
-    height: 230px;
-    display: block;
-    margin: 25px auto;
+    height: 230px; /* altura */
+    display: block; /* espacio de imagenes y texto */
+    margin: 25px auto; 
 }
-
+/*---------------------------------------------------*/
+/*------------- espacio de parrafo ----------------------*/
 .inicio p {
     margin: 20px auto;
 }
-
+/*---------------------------------------------------*/
+/*---------------------------------------------------*/
 footer {
     position: relative;
     background-color: #b11a1c;
@@ -109,18 +129,20 @@ footer {
     font-family: "Times New Roman", serif;
     font-size: 1.7 rem;
 }
+/*---------------------------------------------------*/
 
+/*----------------- espacio del pie de pagina ----------------*/
 footer p {
     margin: 6px;
 }
-
+/*---------------------------------------------------*/
+/*------------- decoracion del pie de pagina -------------------*/
 .flor-izquierda {
     position: absolute;
     bottom: 0;
     left: 0;
     height: 110px;
 }
-
 .flor-derecha {
     position: absolute;
     bottom: 0;
@@ -128,13 +150,15 @@ footer p {
     height: 110px;
     transform: rotate(180deg);
 }
-
+/*---------------------------------------------------*/
 
 </style>
 </head>
 
 <body>
 
+
+<!-- ************** encabezado ************** -->
 <header>
 
     <img src="decoracion/banderas.png" alt="banderas decorativas" 
@@ -152,7 +176,9 @@ footer p {
 
     </div>
 </header>
+<!-- ********************************************* -->
 
+<!-- ************** navegador ************** -->
 <nav>
     <a href="index.html.html">Inicio</a>
     <a href="fechas.html">Fechas</a>
@@ -160,6 +186,8 @@ footer p {
     <a href="historia.html">Historia</a>
     <a href="datos.html">Datos y mitos</a>
 </nav>
+
+<!-- ************************************** -->
 
 <div class="inicio">
 
