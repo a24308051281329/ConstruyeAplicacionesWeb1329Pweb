@@ -1,25 +1,24 @@
-```html
 <!DOCTYPE html> <!-- Indica que el documento utiliza HTML5 -->
 
 <html> <!-- Inicio del documento HTML -->
 
 <head> <!-- Contiene la configuración de la página -->
 
-<!-- Tipos de letra utilizados en la página -->
+<!-- Tipos de letra utilizados -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
 
 <style>
 
-/* ---------- configuración general ---------- */
+/* Configuración general de la página */
 body {
     margin: 0;
     background-color: #f0eeea;
 }
 
 
-/* ---------- encabezado ---------- */
+/* Encabezado */
 .mi-encabezado {
     background-color: #036436;
 
@@ -39,8 +38,9 @@ body {
 }
 
 
-/* ---------- título del encabezado ---------- */
+/* Título del encabezado */
 .mi-encabezado h1 {
+    margin: 0;
     font-family: "Rye", serif;
     font-weight: 400;
     font-style: normal;
@@ -48,7 +48,7 @@ body {
 }
 
 
-/* ---------- letra Rye ---------- */
+/* Texto con letra Rye */
 .letra-rye {
     font-family: "Rye", serif;
     font-weight: 400;
@@ -57,7 +57,7 @@ body {
 }
 
 
-/* ---------- letra Times New Roman ---------- */
+/* Texto con letra Times New Roman */
 .letra-times {
     font-family: "Times New Roman", serif;
     font-weight: 400;
@@ -67,7 +67,7 @@ body {
 }
 
 
-/* ---------- menú de navegación ---------- */
+/* Menú de navegación */
 nav {
     background-color: #f7f7f7;
     border-bottom: 15px solid #f7f7f7;
@@ -77,7 +77,7 @@ nav {
 }
 
 
-/* ---------- botones del menú ---------- */
+/* Botones del menú */
 nav a {
     display: inline-block;
     background-color: #c8d1d9;
@@ -92,14 +92,14 @@ nav a {
 }
 
 
-/* ---------- cambio de color al pasar el cursor ---------- */
+/* Color de los botones cuando se pasa el cursor */
 nav a:hover {
     background-color: #f87778;
     color: #ffffff;
 }
 
 
-/* ---------- calendario ---------- */
+/* Calendario */
 .calendario {
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 
-/* ---------- tabla del calendario ---------- */
+/* Tabla del calendario */
 table {
     width: 50%;
     table-layout: fixed;
@@ -128,7 +128,7 @@ td {
 }
 
 
-/* ---------- fechas importantes ---------- */
+/* Fechas importantes */
 strong {
     color: #b11a1c;
     display: block;
@@ -136,7 +136,7 @@ strong {
 }
 
 
-/* ---------- línea del tiempo ---------- */
+/* Línea del tiempo */
 .timeline {
     width: 90%;
     margin: 50px auto;
@@ -148,25 +148,26 @@ strong {
 }
 
 
-/* ---------- pie de página ---------- */
+/* Pie de página */
 footer {
     position: relative;
     background-color: #b11a1c;
     color: white;
     text-align: center;
     padding: 5px;
+    margin-top: 20px;
     font-family: "Times New Roman", serif;
     font-size: 1.7rem;
 }
 
 
-/* ---------- texto del pie de página ---------- */
+/* Texto del pie de página */
 footer p {
     margin: 6px;
 }
 
 
-/* ---------- flores decorativas ---------- */
+/* Flores decorativas del pie de página */
 .flor-izquierda {
     position: absolute;
     bottom: 0;
@@ -190,7 +191,7 @@ footer p {
 <body> <!-- Inicio del contenido visible -->
 
 
-<!-- ---------- encabezado ---------- -->
+<!-- Encabezado de la página -->
 <header>
 
     <!-- Banderas decorativas -->
@@ -209,7 +210,7 @@ footer p {
 </header>
 
 
-<!-- ---------- menú de navegación ---------- -->
+<!-- Menú de navegación -->
 <nav>
 
     <a href="index.html">Inicio</a>
@@ -221,35 +222,135 @@ footer p {
 </nav>
 
 
-<!-- ---------- contenido del calendario ---------- -->
+<!-- Contenido de las fechas importantes -->
 <div class="calendario">
 
-    <!-- Aquí va el calendario con las fechas importantes -->
+    <h2 class="letra-rye">Fechas importantes</h2>
 
-    <!-- Mantén aquí exactamente las fechas y contenido que ya tenías -->
+    <table>
+
+        <tr>
+            <th>LUNES</th>
+            <th>MARTES</th>
+            <th>MIÉRCOLES</th>
+            <th>JUEVES</th>
+            <th>VIERNES</th>
+            <th>SÁBADO</th>
+            <th>DOMINGO</th>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+        </tr>
+
+        <tr>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td>
+                14
+                <strong>DÍA DE LOS<br>NIÑOS HÉROES</strong>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                15
+                <strong>GRITO DE<br>INDEPENDENCIA</strong>
+            </td>
+            <td>
+                16
+                <strong>INDEPENDENCIA<br>DE MÉXICO</strong>
+            </td>
+            <td>17</td>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+        </tr>
+
+        <tr>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+            <td>25</td>
+            <td>26</td>
+            <td>
+                27
+                <strong>CONSUMACIÓN DE<br>LA INDEPENDENCIA</strong>
+            </td>
+            <td>
+                28
+                <strong>FIRMA DEL ACTA<br>DE INDEPENDENCIA</strong>
+            </td>
+        </tr>
+
+        <tr>
+            <td>29</td>
+            <td>30</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+
+    </table>
 
 </div>
 
 
-<!-- ---------- línea del tiempo ---------- -->
+<!-- Información de las fechas importantes -->
 <div class="timeline">
 
-    <h2>Línea del tiempo</h2>
+    <h2>Fechas importantes</h2>
 
-    <!-- Aquí va la información de la línea del tiempo que ya tenías -->
+    <p class="letra-times">
+        <strong>13 de septiembre – Gesta Heroica de los Niños Héroes</strong>
+        Se conmemora la defensa del Castillo de Chapultepec por parte de los cadetes del Colegio Militar frente a la invasión del ejército estadounidense durante la guerra mexicano-estadounidense.
+    </p>
+
+    <p class="letra-times">
+        <strong>15 de septiembre – Conmemoración del Grito de Dolores</strong>
+        Durante la noche del 15 de septiembre, el Presidente de la República, gobernadores y alcaldes realizan ceremonialmente el "Grito" en plazas públicas, emulando la convocatoria insurgente iniciada en 1810.
+    </p>
+
+    <p class="letra-times">
+        <strong>16 de septiembre – Aniversario del Inicio de la Independencia de México</strong>
+        El hecho histórico central del mes. Marca el levantamiento armado convocado por el cura Miguel Hidalgo y Costilla en Dolores, Guanajuato, dando inicio a la Guerra de Independencia.
+    </p>
+
+    <p class="letra-times">
+        <strong>27 de septiembre – Consumación de la Independencia de México</strong>
+        Fecha en que concluyó formalmente la lucha tras 11 años de guerra.
+    </p>
+
+    <p class="letra-times">
+        <strong>28 de septiembre – Firma del Acta de Independencia (1821)</strong>
+        La Junta Soberana Gubernativa firmó el Acta de Independencia del Imperio Mexicano, documento con el cual se estableció oficialmente el Estado mexicano.
+    </p>
 
 </div>
 
 
-<!-- ---------- pie de página ---------- -->
+<!-- Pie de página -->
 <footer>
 
     <p>Ailyn Ramirez Villa</p>
     <p>24308051281329</p>
     <p>5 - J</p>
-    <p>Programación</p>
+    <p>Programacion</p>
 
-    <!-- Flores decorativas del pie -->
+    <!-- Flores decorativas -->
     <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores">
 
     <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores">
@@ -257,7 +358,7 @@ footer p {
 </footer>
 
 
-</body>
+</body> <!-- Finaliza el contenido visible -->
 
-</html>
-```
+</html> <!-- Finaliza el documento HTML -->
+
