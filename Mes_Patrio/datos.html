@@ -2,240 +2,280 @@
 <html>
 <head>
    
+<!-- Conexión con Google Fonts para utilizar la fuente Rye -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-
-<style>
-
-body {
-    margin: 0;
-     background-color: #f0eeea;
-}
-
-.mi-encabezado {
-    background-color: #036436;
-
-    background-image: 
-        url('decoracion/orilla.png'),
-        url('decoracion/orilla2.png');
-
-    background-repeat: no-repeat, no-repeat;
-
-    background-position: center top, center bottom;
-
-    background-size: 100% 89%, 100% 55%;
-
-    padding: 5px 20px;
-    text-align: center;
-    color: #ffffff;
-}
-
-
-.mi-encabezado h1 {
-    margin: 2.3;
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5.2rem;
-}
-
-.letra-rye {
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-top: 5px;
-}
-
-.letra-times {
-    font-family: "Times New Roman", serif;
-    font-weight: 400;
-    font-size: 2rem;
-    margin-top: 4px;
-    text-align: center;
-}
-
-
-nav {
-    background-color: #f7f7f7;
-    border-bottom: 15px solid #f7f7f7;
-    border-top: 10px solid #f7f7f7;
-    text-align: center;
-    padding: 0;
-}
-
-nav a {
-    display: inline-block;
-    background-color: #c8d1d9;
-    color: #000000;
-    text-decoration: none;
-    font-family: Rye, sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 10px 60px;
-    border-radius: 55px;
-    margin: 0 20px;
-}
-
-nav a:hover {
-    background-color: #f87778;
-    color: #ffffff;
-}
-
-.inicio {
-    text-align: center;
-    max-width: 1570px;
-    margin: 30px auto;
-}
-
-.inicio img {
-    height: 230px;
-    display: block;
-    margin: 25px auto;
-}
-
-.inicio p {
-    margin: 20px auto;
-}
-
-footer {
-    position: relative;
-    background-color: #b11a1c;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: 20px;
-    font-family: "Times New Roman", serif;
-    font-size: 1.7 rem;
-}
-
-footer p {
-    margin: 6px;
-}
-
-.flor-izquierda {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 110px;
-}
-
-.flor-derecha {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 110px;
-    transform: rotate(180deg);
-}
-
-.texto-historia {
-    max-width: 2500px;
-    margin: 10px auto;
-    text-align: center;
-    font-family: "Times New Roman", serif;
-    font-size: 1.5rem;
-    line-height: 1.5;
-}
-
-.letra-rye {
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-size: 1,5rem;
-    margin-top: 5px;
-}
-
-.izquierda-texto {
-    flex: 1;
-    text-align: left;
-    font-family: "Times New Roman", sans-serif;
-    font-size: 1.5rem;
-    order: 1;
-    line-height: 1.9;
-}
-
-.minititulo{
-    font-family: "Times New Roman", serif;
-    font-weight: bold;
-    font-size: 1.7rem;
-    margin-top: 1px;
-    text-align: left;
-}
-
-</style>
-</head>
-
-<body>
-
-<header>
-
-    <img src="decoracion/banderas.png" alt="banderas decorativas" 
-         style="position: absolute; top: -40px; left: -30px; height: 190px; transform: rotate(-7deg); z-index: 10;">
-
-    <img src="decoracion/banderas.png" alt="banderas decorativas" 
-         style="position: absolute; top: -40px; left: 1100px; height: 190px; transform: rotate(20deg); z-index: 10;">
-
-
-    <div class="mi-encabezado">
-
-        <h1>Datos y Mitos</h1>
-
-    </div>
-</header>
-
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="fechas.html">Fechas</a>
-    <a href="personajes.html">Personajes</a>
-    <a href="historia.html">Historia</a>
-    <a href="datos.html">Datos y mitos</a>
-</nav>
-
-<div class="inicio"> <p class="texto-historia"> La Independencia de México está llena de acontecimientos, personajes y relatos que forman parte de nuestra historia. Algunos datos son poco conocidos y otros han dado lugar a mitos y confusiones. ¡Descubre cuáles son ciertos! </p> 
-    <h2 class="letra-rye">Datos curiosos</h2> 
-
-    <h3 class="minititulo">1. El Grito de Dolores</h3> 
-    <p class="izquierda-texto"> El 16 de septiembre de 1810, Miguel Hidalgo realizó el llamado que dio inicio al movimiento de Independencia. Por eso esta fecha se conmemora cada año como el Día de la Independencia de México. </p> 
-
-    <h3 class="minititulo">2. La lucha duró 11 años</h3> 
-    <p class="izquierda-texto"> La guerra comenzó en 1810 y terminó en 1821, por lo que el proceso independentista duró aproximadamente 11 años. </p> 
-
-    <h3 class="minititulo">3. Las mujeres también participaron</h3> 
-    <p class="izquierda-texto"> Mujeres como Josefa Ortiz de Domínguez y Leona Vicario tuvieron una participación importante en el movimiento, ayudando con información, recursos y apoyo a los insurgentes. </p> 
-
-    <h3 class="minititulo">4. El Ejército Trigarante</h3> 
-    <p class="izquierda-texto"> El Ejército Trigarante recibió ese nombre porque defendía tres garantías: religión, independencia y unión. </p> 
-
-    <h3 class="minititulo">5. Septiembre es el Mes Patrio</h3>
-    <p class="izquierda-texto"> Septiembre es llamado Mes Patrio porque durante este mes se conmemoran acontecimientos importantes de la historia de México, especialmente relacionados con la Independencia. </p> 
-
-    <h2 class="letra-rye">Mitos y realidades</h2> 
-
-        <p class="izquierda-texto"> <strong>Mito 1:</strong> “Miguel Hidalgo tocó personalmente la campana de Dolores.”<br> 
-        <strong>Realidad:</strong> La tradición relaciona a Hidalgo con el toque de la campana para llamar al pueblo, pero el hecho histórico es más complejo y existen distintas versiones sobre quién la hizo sonar. </p>
-
-        <p class="izquierda-texto"> <strong>Mito 2:</strong> “La Independencia comenzó el 27 de septiembre.”<br> 
-        <strong>Realidad:</strong> No. El movimiento comenzó el 16 de septiembre de 1810. El 27 de septiembre de 1821 corresponde a la consumación de la Independencia. </p> 
-
-        <p class="izquierda-texto"> <strong>Mito 3:</strong> “Agustín de Iturbide siempre estuvo del lado de los insurgentes.”<br> 
-        <strong>Realidad:</strong> No. Al principio combatió contra los insurgentes. Posteriormente se unió a Vicente Guerrero y tuvo un papel importante en la consumación de la Independencia. </p> 
-        <p class="izquierda-texto"> <strong>Mito 4:</strong> “El Grito de Dolores fue exactamente igual al que escuchamos actualmente.”<br> 
-        <strong>Realidad:</strong> No se conoce con certeza cuáles fueron todas las palabras pronunciadas por Hidalgo. La ceremonia que se realiza actualmente es una representación conmemorativa. </p> </div>
-
-<footer>
-    <p>Ailyn Ramirez Villa</p>
-    <p>24308051281329</p>
-    <p>5 - J </p>
-    <p> Programación</p>
-
-    <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores">
-
-    <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores">
-
-</footer>
-
-
-</body>
+<link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet"> 
+ 
+<style> 
+ 
+/* Configuración general de la página */
+body { 
+    margin: 0; 
+     background-color: #f0eeea; 
+} 
+ 
+/* Estilo del encabezado principal */
+.mi-encabezado { 
+    background-color: #036436; 
+ 
+    /* Imágenes decorativas del encabezado */
+    background-image:  
+        url('decoracion/orilla.png'), 
+        url('decoracion/orilla2.png'); 
+ 
+    background-repeat: no-repeat, no-repeat; 
+ 
+    background-position: center top, center bottom; 
+ 
+    background-size: 100% 89%, 100% 55%; 
+ 
+    padding: 5px 20px; 
+    text-align: center; 
+    color: #ffffff; 
+} 
+ 
+ 
+/* Estilo del título principal del encabezado */
+.mi-encabezado h1 { 
+    margin: 2.3; 
+    font-family: "Rye", serif; 
+    font-weight: 400; 
+    font-style: normal; 
+    font-size: 5.2rem; 
+} 
+ 
+/* Estilo para textos que utilizan la fuente Rye */
+.letra-rye { 
+    font-family: "Rye", serif; 
+    font-weight: 400; 
+    font-size: 2.5rem; 
+    margin-top: 5px; 
+} 
+ 
+/* Estilo para textos con fuente Times New Roman */
+.letra-times { 
+    font-family: "Times New Roman", serif; 
+    font-weight: 400; 
+    font-size: 2rem; 
+    margin-top: 4px; 
+    text-align: center; 
+} 
+ 
+ 
+/* Estilo general del menú de navegación */
+nav { 
+    background-color: #f7f7f7; 
+    border-bottom: 15px solid #f7f7f7; 
+    border-top: 10px solid #f7f7f7; 
+    text-align: center; 
+    padding: 0; 
+} 
+ 
+/* Estilo de los enlaces del menú */
+nav a { 
+    display: inline-block; 
+    background-color: #c8d1d9; 
+    color: #000000; 
+    text-decoration: none; 
+    font-family: Rye, sans-serif; 
+    font-weight: 400; 
+    font-size: 1.5rem; 
+    padding: 10px 60px; 
+    border-radius: 55px; 
+    margin: 0 20px; 
+} 
+ 
+/* Cambio de color de los enlaces al pasar el cursor */
+nav a:hover { 
+    background-color: #f87778; 
+    color: #ffffff; 
+} 
+ 
+/* Contenedor principal de la información */
+.inicio { 
+    text-align: center; 
+    max-width: 1570px; 
+    margin: 30px auto; 
+} 
+ 
+/* Estilo de las imágenes dentro del contenido */
+.inicio img { 
+    height: 230px; 
+    display: block; 
+    margin: 25px auto; 
+} 
+ 
+/* Estilo de los párrafos dentro del contenido */
+.inicio p { 
+    margin: 20px auto; 
+} 
+ 
+/* Estilo del pie de página */
+footer { 
+    position: relative; 
+    background-color: #b11a1c; 
+    color: white; 
+    text-align: center; 
+    padding: 5px; 
+    margin-top: 20px; 
+    font-family: "Times New Roman", serif; 
+    font-size: 1.7 rem; 
+} 
+ 
+/* Espaciado de los párrafos del pie de página */
+footer p { 
+    margin: 6px; 
+} 
+ 
+/* Posición de la flor decorativa del lado izquierdo */
+.flor-izquierda { 
+    position: absolute; 
+    bottom: 0; 
+    left: 0; 
+    height: 110px; 
+} 
+ 
+/* Posición de la flor decorativa del lado derecho */
+.flor-derecha { 
+    position: absolute; 
+    bottom: 0; 
+    right: 0; 
+    height: 110px; 
+    transform: rotate(180deg); 
+} 
+ 
+/* Estilo del texto introductorio de la sección de historia */
+.texto-historia { 
+    max-width: 2500px; 
+    margin: 10px auto; 
+    text-align: center; 
+    font-family: "Times New Roman", serif; 
+    font-size: 1.5rem; 
+    line-height: 1.5; 
+} 
+ 
+/* Estilo de los títulos con la fuente Rye */
+.letra-rye { 
+    font-family: "Rye", serif; 
+    font-weight: 400; 
+    font-size: 1,5rem; 
+    margin-top: 5px; 
+} 
+ 
+/* Estilo de los textos informativos */
+.izquierda-texto { 
+    flex: 1; 
+    text-align: left; 
+    font-family: "Times New Roman", sans-serif; 
+    font-size: 1.5rem; 
+    order: 1; 
+    line-height: 1.9; 
+} 
+ 
+/* Estilo de los subtítulos de cada dato */
+.minititulo{ 
+    font-family: "Times New Roman", serif; 
+    font-weight: bold; 
+    font-size: 1.7rem; 
+    margin-top: 1px; 
+    text-align: left; 
+} 
+ 
+</style> 
+</head> 
+ 
+<body> 
+ 
+<!-- Encabezado de la página -->
+<header> 
+ 
+    <!-- Primera imagen decorativa de banderas -->
+    <img src="decoracion/banderas.png" alt="banderas decorativas"  
+         style="position: absolute; top: -40px; left: -30px; height: 190px; transform: rotate(-7deg); z-index: 10;"> 
+ 
+    <!-- Segunda imagen decorativa de banderas -->
+    <img src="decoracion/banderas.png" alt="banderas decorativas"  
+         style="position: absolute; top: -40px; left: 1100px; height: 190px; transform: rotate(20deg); z-index: 10;"> 
+ 
+ 
+    <!-- Contenedor del encabezado -->
+    <div class="mi-encabezado"> 
+ 
+        <!-- Título de la página -->
+        <h1>Datos y Mitos</h1> 
+ 
+    </div> 
+</header> 
+ 
+<!-- Menú de navegación entre las diferentes páginas -->
+<nav> 
+    <a href="index.html.html">Inicio</a> 
+    <a href="fechas.html">Fechas</a> 
+    <a href="personajes.html">Personajes</a> 
+    <a href="historia.html">Historia</a> 
+    <a href="datos.html">Datos y mitos</a> 
+</nav> 
+ 
+<!-- Contenedor principal de los datos y mitos -->
+<div class="inicio"> <p class="texto-historia"> La Independencia de México está llena de acontecimientos, personajes y relatos que forman parte de nuestra historia. Algunos datos son poco conocidos y otros han dado lugar a mitos y confusiones. ¡Descubre cuáles son ciertos! </p>  
+    <!-- Título de la sección de datos curiosos -->
+    <h2 class="letra-rye">Datos curiosos</h2>  
+ 
+    <!-- Primer dato curioso -->
+    <h3 class="minititulo">1. El Grito de Dolores</h3>  
+    <p class="izquierda-texto"> El 16 de septiembre de 1810, Miguel Hidalgo realizó el llamado que dio inicio al movimiento de Independencia. Por eso esta fecha se conmemora cada año como el Día de la Independencia de México. </p>  
+ 
+    <!-- Segundo dato curioso -->
+    <h3 class="minititulo">2. La lucha duró 11 años</h3>  
+    <p class="izquierda-texto"> La guerra comenzó en 1810 y terminó en 1821, por lo que el proceso independentista duró aproximadamente 11 años. </p>  
+ 
+    <!-- Tercer dato curioso -->
+    <h3 class="minititulo">3. Las mujeres también participaron</h3>  
+    <p class="izquierda-texto"> Mujeres como Josefa Ortiz de Domínguez y Leona Vicario tuvieron una participación importante en el movimiento, ayudando con información, recursos y apoyo a los insurgentes. </p>  
+ 
+    <!-- Cuarto dato curioso -->
+    <h3 class="minititulo">4. El Ejército Trigarante</h3>  
+    <p class="izquierda-texto"> El Ejército Trigarante recibió ese nombre porque defendía tres garantías: religión, independencia y unión. </p>  
+ 
+    <!-- Quinto dato curioso -->
+    <h3 class="minititulo">5. Septiembre es el Mes Patrio</h3> 
+    <p class="izquierda-texto"> Septiembre es llamado Mes Patrio porque durante este mes se conmemoran acontecimientos importantes de la historia de México, especialmente relacionados con la Independencia. </p>  
+ 
+    <!-- Título de la sección de mitos y realidades -->
+    <h2 class="letra-rye">Mitos y realidades</h2>  
+ 
+        <!-- Primer mito y su realidad -->
+        <p class="izquierda-texto"> <strong>Mito 1:</strong> “Miguel Hidalgo tocó personalmente la campana de Dolores.”<br>  
+        <strong>Realidad:</strong> La tradición relaciona a Hidalgo con el toque de la campana para llamar al pueblo, pero el hecho histórico es más complejo y existen distintas versiones sobre quién la hizo sonar. </p> 
+ 
+        <!-- Segundo mito y su realidad -->
+        <p class="izquierda-texto"> <strong>Mito 2:</strong> “La Independencia comenzó el 27 de septiembre.”<br>  
+        <strong>Realidad:</strong> No. El movimiento comenzó el 16 de septiembre de 1810. El 27 de septiembre de 1821 corresponde a la consumación de la Independencia. </p>  
+ 
+        <!-- Tercer mito y su realidad -->
+        <p class="izquierda-texto"> <strong>Mito 3:</strong> “Agustín de Iturbide siempre estuvo del lado de los insurgentes.”<br>  
+        <strong>Realidad:</strong> No. Al principio combatió contra los insurgentes. Posteriormente se unió a Vicente Guerrero y tuvo un papel importante en la consumación de la Independencia. </p>  
+        
+        <!-- Cuarto mito y su realidad -->
+        <p class="izquierda-texto"> <strong>Mito 4:</strong> “El Grito de Dolores fue exactamente igual al que escuchamos actualmente.”<br>  
+        <strong>Realidad:</strong> No se conoce con certeza cuáles fueron todas las palabras pronunciadas por Hidalgo. La ceremonia que se realiza actualmente es una representación conmemorativa. </p> </div> 
+ 
+<!-- Pie de página con los datos del proyecto -->
+<footer> 
+    <p>Ailyn Ramirez Villa</p> 
+    <p>24308051281329</p> 
+    <p>5 - J </p> 
+    <p> Programación</p> 
+ 
+    <!-- Flor decorativa del lado izquierdo -->
+    <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores"> 
+ 
+    <!-- Flor decorativa del lado derecho -->
+    <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores"> 
+ 
+</footer> 
+ 
+ 
+</body> 
 </html>
-
-
-
