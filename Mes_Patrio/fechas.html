@@ -2,12 +2,12 @@
 <html>
 <head>
    
-<!-- Conexión con Google Fonts para utilizar la fuente Rye -->
+<!-- Fuentes utilizadas en la página -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
 
-<!-- Conexión con Google Fonts para utilizar la fuente Open Sans -->
+<!-- Fuente Open Sans -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet"> 
@@ -20,7 +20,7 @@ body {
      background-color: #f0eeea; 
 } 
  
-/* Estilo principal del encabezado */
+/* Encabezado principal */
 .mi-encabezado { 
     background-color: #036436; 
  
@@ -39,7 +39,7 @@ body {
     color: #ffffff; 
 } 
  
-/* Estilo del título principal */
+/* Título del encabezado */
 .mi-encabezado h1 { 
     margin: 2.3; 
     font-family: "Rye", serif; 
@@ -48,7 +48,7 @@ body {
     font-size: 5.2rem; 
 } 
  
-/* Estilo para textos con la fuente Rye */
+/* Texto con fuente Rye */
 .letra-rye { 
     font-family: "Rye", serif; 
     font-weight: 400; 
@@ -56,7 +56,7 @@ body {
     margin-top: 5px; 
 } 
  
-/* Estilo para textos con Times New Roman */
+/* Texto con fuente Times New Roman */
 .letra-times { 
     font-family: "Times New Roman", serif; 
     font-weight: 400; 
@@ -75,7 +75,7 @@ body {
     "wdth" 100; 
 } 
  
-/* Estilo del menú de navegación */
+/* Menú de navegación */
 nav { 
     background-color: #f7f7f7; 
     border-bottom: 15px solid #f7f7f7; 
@@ -84,7 +84,7 @@ nav {
     padding: 0; 
 } 
  
-/* Estilo de los enlaces del menú */
+/* Enlaces del menú */
 nav a { 
     display: inline-block; 
     background-color: #c8d1d9; 
@@ -98,25 +98,25 @@ nav a {
     margin: 0 20px; 
 } 
  
-/* Estilo de los enlaces cuando se pasa el cursor sobre ellos */
+/* Cambio de apariencia al pasar el cursor */
 nav a:hover { 
     background-color: #f87778; 
     color: #ffffff; 
 } 
  
-/* Estilo de las imágenes dentro del contenido */
+/* Imágenes del contenido */
 .inicio img { 
     height: 230px; 
     display: block; 
     margin: 25px auto; 
 } 
  
-/* Espaciado de los párrafos del contenido */
+/* Párrafos del contenido */
 .inicio p { 
     margin: 20px auto; 
 } 
  
-/* Estilo del pie de página */
+/* Pie de página */
 footer { 
     position: relative; 
     background-color: #b11a1c; 
@@ -128,12 +128,12 @@ footer {
     font-size: 1.7 rem; 
 } 
  
-/* Estilo de los párrafos del pie de página */
+/* Párrafos del pie de página */
 footer p { 
     margin: 6px; 
 } 
  
-/* Posición de la flor decorativa izquierda */
+/* Flor decorativa izquierda */
 .flor-izquierda { 
     position: absolute; 
     bottom: 0; 
@@ -141,7 +141,7 @@ footer p {
     height: 110px; 
 } 
  
-/* Posición de la flor decorativa derecha */
+/* Flor decorativa derecha */
 .flor-derecha { 
     position: absolute; 
     bottom: 0; 
@@ -158,7 +158,7 @@ footer p {
     margin: 30px 0 80px 60px; 
 } 
  
-/* Configuración general de la tabla */
+/* Configuración de la tabla */
 table { 
     width: 50%; 
     margin-left: 0; 
@@ -167,21 +167,21 @@ table {
     border-collapse: collapse; 
 } 
  
-/* Estilo de las celdas y encabezados de la tabla */
+/* Bordes y tamaño de las celdas */
 th, td { 
     border: 1px solid #000000; 
     padding: 6px; 
     width: 155px; 
 } 
  
-/* Estilo de las celdas de los días */
+/* Configuración de las celdas de los días */
 td { 
     height: 80px; 
     vertical-align: top; 
     text-align: right; 
 } 
 
-/* Estilo de los nombres de los días */
+/* Encabezados de los días de la semana */
 th { 
     background-color: #b11a1c; 
     color: #ffffff; 
@@ -190,7 +190,7 @@ th {
     text-align: center; 
 } 
  
-/* Estilo de los nombres de las fechas importantes */
+/* Fechas importantes dentro del calendario */
 strong { 
     display: block; 
     font-family: "Open Sans", sans-serif; 
@@ -201,16 +201,17 @@ strong {
     color: #b11a1c; 
 } 
  
+ 
 /* LÍNEA DEL TIEMPO */ 
  
-/* Configuración de la sección de la línea del tiempo */
+/* Contenedor de la línea del tiempo */
 .linea-tiempo { 
     width: 90%; 
     margin: 50px auto; 
     text-align: center; 
 } 
  
-/* Estilo del título de la línea del tiempo */
+/* Título de la línea del tiempo */
 .linea-tiempo h2 { 
     font-family: "Rye", serif; 
     color: #0f321b; 
@@ -229,21 +230,22 @@ strong {
 <!-- Encabezado de la página -->
 <header> 
  
-    <!-- Primera imagen decorativa de banderas -->
+    <!-- Banderas decorativas del lado izquierdo -->
     <img src="decoracion/banderas.png" alt="banderas decorativas"  
          style="position: absolute; top: -40px; left: -30px; height: 190px; transform: rotate(-7deg); z-index: 10;"> 
  
-    <!-- Segunda imagen decorativa de banderas -->
+    <!-- Banderas decorativas del lado derecho -->
     <img src="decoracion/banderas.png" alt="banderas decorativas"  
          style="position: absolute; top: -40px; left: 1100px; height: 190px; transform: rotate(20deg); z-index: 10;"> 
+ 
  
     <!-- Contenedor del encabezado -->
     <div class="mi-encabezado"> 
  
-        <!-- Título principal -->
+        <!-- Título de la página -->
         <h1>Fechas importantes</h1> 
  
-        <!-- Espacio para el texto secundario -->
+        <!-- Espacio para texto secundario -->
         <p class="letra-rye"></p> 
  
     </div> 
@@ -261,10 +263,11 @@ strong {
 <!-- Contenedor del calendario -->
 <div class="calendario"> 
  
-<!-- Tabla que contiene los días y fechas importantes -->
+ 
+<!-- Tabla del calendario -->
 <table> 
 
-    <!-- Encabezados de los días de la semana -->
+    <!-- Días de la semana -->
     <tr> 
         <th>LUNES</th> 
         <th>MARTES</th> 
@@ -275,7 +278,7 @@ strong {
         <th>DOMINGO</th> 
     </tr> 
  
-    <!-- Primera semana del calendario -->
+    <!-- Primera semana -->
     <tr> 
         <td></td> 
         <td>1</td> 
@@ -286,7 +289,7 @@ strong {
         <td>6</td> 
     </tr> 
  
-    <!-- Segunda semana del calendario -->
+    <!-- Segunda semana -->
     <tr> 
         <td>7</td> 
         <td>8</td> 
@@ -299,7 +302,7 @@ strong {
         <strong>DIA DE LOS NIÑOS HEROES</strong></td></td> 
     </tr> 
  
-    <!-- Tercera semana del calendario -->
+    <!-- Tercera semana -->
     <tr> 
         <td>14</td> 
         <td>15 
@@ -314,7 +317,7 @@ strong {
         <td>20</td> 
     </tr> 
  
-    <!-- Cuarta semana del calendario -->
+    <!-- Cuarta semana -->
     <tr> 
         <td>21</td> 
         <td>22</td> 
@@ -326,7 +329,7 @@ strong {
         <br>  
         <strong>CONSUMACION DE LA INDEPENDENCIA</strong></td></td> 
  
-    <!-- Quinta semana del calendario -->
+    <!-- Quinta semana -->
     <tr> 
         <td>28 
         <br>  
@@ -342,23 +345,24 @@ strong {
  
 </div> 
  
-<!-- Sección que contiene la línea del tiempo -->
+<!-- Sección de la línea del tiempo -->
 <section class="linea-tiempo"> 
  
-    <!-- Título de la línea del tiempo -->
-    <h2>Línea del tiempo</h2> 
+<!-- Título de la línea del tiempo -->
+<h2>Línea del tiempo</h2> 
  
-    <!-- Imagen de la línea del tiempo -->
-    <img src="imagenes/linea-tiempo.png" alt="linea del tiempo"  
-        style="height: 600px;"> 
+<!-- Imagen de la línea del tiempo -->
+<img src="imagenes/linea-tiempo.png" alt="linea del tiempo"  
+    style="height: 600px;"> 
  
-    <!-- Imagen decorativa de fuegos artificiales -->
-    <img src="decoracion/fuegos-artificiales.png" alt="fuegos artificiales"  
+<!-- Fuegos artificiales decorativos -->
+<img src="decoracion/fuegos-artificiales.png" alt="fuegos artificiales"  
          style="position: absolute; top: 500px; left: 200px; height: 115px; transform: rotate(0deg); z-index: 10;"> 
  
     </div> 
  
 </section> 
+ 
  
 <!-- Pie de página -->
 <footer> 
@@ -367,10 +371,10 @@ strong {
     <p>5 - J </p> 
     <p> Programación</p> 
  
-    <!-- Flor decorativa del lado izquierdo -->
+    <!-- Flor decorativa izquierda -->
     <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores"> 
  
-    <!-- Flor decorativa del lado derecho -->
+    <!-- Flor decorativa derecha -->
     <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores"> 
  
 </footer> 
