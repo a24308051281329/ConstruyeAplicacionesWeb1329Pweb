@@ -1,67 +1,85 @@
+<!DOCTYPE html> <!-- Indica que el documento utiliza HTML5 -->
 
-<!DOCTYPE html>
-<html>
-<head>
+<html> <!-- Inicio del documento HTML -->
+
+<head> <!-- Contiene la información y configuraciones de la página -->
    
+<!-- ---------- Conexión para utilizar la letra Rye ---------- -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
+<!-- ---------------------------------------------------------- -->
 
+
+<!-- ---------- Conexión para utilizar la letra Open Sans ---------- -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<!-- --------------------------------------------------------------- -->
 
+
+<!-- ---------- Estilos CSS de la página ---------- -->
 <style>
 
-body {
-    margin: 0;
-     background-color: #f0eeea;
+
+/*-------------------- configuración general de la página --------------------*/
+body { /* Contiene todo el contenido visible de la página */
+    margin: 0; /* Elimina el espacio alrededor de la página */
+    background-color: #f0eeea; /* Color de fondo */
 }
 
-.mi-encabezado {
-    background-color: #036436;
 
+/*-------------------- encabezado --------------------*/
+.mi-encabezado { /* Configura el diseño del encabezado */
+    background-color: #036436; /* Color del encabezado */
+
+    /*---------- decoraciones del encabezado -------------*/
     background-image: 
         url('decoracion/orilla.png'),
         url('decoracion/orilla2.png');
 
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat; /* Evita que las imágenes se repitan */
 
-    background-position: center top, center bottom;
+    background-position: center top, center bottom; /* Coloca las decoraciones */
 
-    background-size: 100% 89%, 100% 55%;
+    background-size: 100% 89%, 100% 55%; /* Cambia el tamaño de las decoraciones */
 
-    padding: 5px 20px;
-    text-align: center;
-    color: #ffffff;
+    padding: 5px 20px; /* Espacio interno del encabezado */
+    text-align: center; /* Centra el texto */
+    color: #ffffff; /* Color de la letra */
 }
 
 
-.mi-encabezado h1 {
-    margin: 2.3;
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 5.2rem;
-}
-
-.letra-rye {
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-top: 5px;
-}
-
-.letra-times {
-    font-family: "Times New Roman", serif;
-    font-weight: 400;
-    font-size: 2rem;
-    margin-top: 4px;
-    text-align: center;
+/*---- Tipo de letra del título del encabezado -----*/
+.mi-encabezado h1 { /* Configura el título principal */
+    margin: 2.3px; /* margen */
+    font-family: "Rye", serif; /* Tipo de letra */
+    font-weight: 400; /* Grosor */
+    font-style: normal; /* Estilo normal */
+    font-size: 5.2rem; /* Tamaño de letra */
 }
 
 
+/*-------------- letra Rye -------------------*/
+.letra-rye { /* Configura los textos que utilizan Rye */
+    font-family: "Rye", serif; /* Tipo de letra */
+    font-weight: 400; /* Grosor */
+    font-size: 2.5rem; /* Tamaño de letra */
+    margin-top: 5px; /* Espacio superior */
+}
 
+
+/*-------- letra Times New Roman ------------*/
+.letra-times { /* Configura los textos con Times New Roman */
+    font-family: "Times New Roman", serif; /* Tipo de letra */
+    font-weight: 400; /* Grosor */
+    font-size: 2rem; /* Tamaño de letra */
+    margin-top: 4px; /* Espacio superior */
+    text-align: center; /* Centra el texto */
+}
+
+
+/*-------------------- configuración de Open Sans --------------------*/
 .open-sans-<uniquifier> {
   font-family: "Open Sans", sans-serif;
   font-optical-sizing: auto;
@@ -72,173 +90,217 @@ body {
 }
 
 
-nav {
-    background-color: #f7f7f7;
-    border-bottom: 15px solid #f7f7f7;
-    border-top: 10px solid #f7f7f7;
-    text-align: center;
-    padding: 0;
-}
-
-nav a {
-    display: inline-block;
-    background-color: #c8d1d9;
-    color: #000000;
-    text-decoration: none;
-    font-family: Rye, sans-serif;
-    font-weight: 400;
-    font-size: 1.5rem;
-    padding: 10px 60px;
-    border-radius: 55px;
-    margin: 0 20px;
-}
-
-nav a:hover {
-    background-color: #f87778;
-    color: #ffffff;
-}
-
-.inicio img {
-    height: 230px;
-    display: block;
-    margin: 25px auto;
-}
-
-.inicio p {
-    margin: 20px auto;
-}
-
-footer {
-    position: relative;
-    background-color: #b11a1c;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: 20px;
-    font-family: "Times New Roman", serif;
-    font-size: 1.7 rem;
-}
-
-footer p {
-    margin: 6px;
-}
-
-.flor-izquierda {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 110px;
-}
-
-.flor-derecha {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 110px;
-    transform: rotate(180deg);
+/*----------------------- navegador -----------------------*/
+nav { /* Contiene el menú de navegación */
+    background-color: #f7f7f7; /* Color de fondo */
+    border-bottom: 15px solid #f7f7f7; /* Espacio inferior */
+    border-top: 10px solid #f7f7f7; /* Espacio superior */
+    text-align: center; /* Centra los botones */
+    padding: 0; /* Espacio interno */
 }
 
 
-.calendario {
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    max-width: 1000px;
-    margin: 30px 0 80px 60px;
+/*--------------- botones del navegador ---------------*/
+nav a { /* Configura los enlaces del menú */
+    display: inline-block; /* Permite dar tamaño y espacio a los enlaces */
+    background-color: #c8d1d9; /* Color de los botones */
+    color: #000000; /* Color de la letra */
+    text-decoration: none; /* Quita el subrayado */
+    font-family: Rye, sans-serif; /* Tipo de letra */
+    font-weight: 400; /* Grosor */
+    font-size: 1.5rem; /* Tamaño de letra */
+    padding: 10px 60px; /* Espacio dentro de los botones */
+    border-radius: 55px; /* Redondea las esquinas */
+    margin: 0 20px; /* Espacio entre los botones */
 }
 
 
-table {
-    width: 50%;
-    margin-left: 0;
-    margin-right: auto;
-    table-layout: fixed;
-    border-collapse: collapse;
-}
-
-th, td {
-    border: 1px solid #000000;
-    padding: 6px;
-    width: 155px;
-}
-
-td {
-    height: 80px;
-    vertical-align: top;
-    text-align: right;
-}
-th {
-    background-color: #b11a1c;
-    color: #ffffff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-strong {
-    display: block;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 1.2rem;
-    margin-top: 4px;
-    text-align: center;
-    color: #b11a1c;
+/*---------- cambio de color de los botones ------------*/
+nav a:hover { /* Cambia el botón cuando se pasa el cursor */
+    background-color: #f87778; /* Color del botón al pasar el cursor */
+    color: #ffffff; /* Color de la letra */
 }
 
 
-/* LÍNEA DEL TIEMPO */
-
-.linea-tiempo {
-    width: 90%;
-    margin: 50px auto;
-    text-align: center;
-}
-
-.linea-tiempo h2 {
-    font-family: "Rye", serif;
-    color: #0f321b;
-    font-weight: 320;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
+/*-------------------- imagen de inicio --------------------*/
+.inicio img { /* Configura las imágenes de inicio */
+    height: 230px; /* Altura */
+    display: block; /* Hace que la imagen sea un bloque */
+    margin: 25px auto; /* Centra y separa la imagen */
 }
 
 
+/*------------- espacio de párrafo ----------------------*/
+.inicio p { /* Configura los párrafos de inicio */
+    margin: 20px auto; /* Espacio alrededor del párrafo */
+}
 
-</style>
-</head>
 
-<body>
+/*-------------------- pie de página --------------------*/
+footer { /* Contiene y configura el pie de página */
+    position: relative; /* Permite colocar las decoraciones */
+    background-color: #b11a1c; /* Color de fondo */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    padding: 5px; /* Espacio interno */
+    margin-top: 20px; /* Espacio superior */
+    font-family: "Times New Roman", serif; /* Tipo de letra */
+    font-size: 1.7 rem; /* ⚠️ Hay un espacio; debería ser 1.7rem */
+}
 
-<header>
 
+/*----------------- espacio del pie de página ----------------*/
+footer p { /* Configura los párrafos del pie */
+    margin: 6px; /* Espacio entre los párrafos */
+}
+
+
+/*------------- decoración del pie de página -------------------*/
+.flor-izquierda { /* Configura la flor izquierda */
+    position: absolute; /* Permite colocarla en una posición específica */
+    bottom: 0; /* La coloca abajo */
+    left: 0; /* La coloca a la izquierda */
+    height: 110px; /* Altura */
+}
+
+
+.flor-derecha { /* Configura la flor derecha */
+    position: absolute; /* Permite colocarla en una posición específica */
+    bottom: 0; /* La coloca abajo */
+    right: 0; /* La coloca a la derecha */
+    height: 110px; /* Altura */
+    transform: rotate(180deg); /* Gira la imagen */
+}
+
+
+/*-------------------- calendario --------------------*/
+.calendario { /* Configura el área donde está el calendario */
+    font-family: "Open Sans", sans-serif; /* Tipo de letra */
+    font-weight: bold; /* Hace el texto más grueso */
+    max-width: 1000px; /* Ancho máximo */
+    margin: 30px 0 80px 60px; /* Márgenes */
+}
+
+
+/*-------------------- tabla --------------------*/
+table { /* Configura la tabla del calendario */
+    width: 50%; /* Ancho de la tabla */
+    margin-left: 0; /* Coloca la tabla a la izquierda */
+    margin-right: auto; /* Ajusta el espacio derecho */
+    table-layout: fixed; /* Hace que las columnas tengan un tamaño fijo */
+    border-collapse: collapse; /* Junta los bordes de las celdas */
+}
+
+
+/*-------------------- celdas de la tabla --------------------*/
+th, td { /* Configura encabezados y celdas */
+    border: 1px solid #000000; /* Borde de las celdas */
+    padding: 6px; /* Espacio interno */
+    width: 155px; /* Ancho de las celdas */
+}
+
+
+/*-------------------- contenido de los días --------------------*/
+td { /* Configura las celdas de los días */
+    height: 80px; /* Altura */
+    vertical-align: top; /* Coloca el contenido arriba */
+    text-align: right; /* Alinea los números a la derecha */
+}
+
+
+/*-------------------- días de la semana --------------------*/
+th { /* Configura los nombres de los días */
+    background-color: #b11a1c; /* Color de fondo */
+    color: #ffffff; /* Color de letra */
+    font-family: "Open Sans", sans-serif; /* Tipo de letra */
+    font-size: 0.9rem; /* Tamaño */
+    text-align: center; /* Centra el texto */
+}
+
+
+/*-------------------- fechas importantes --------------------*/
+strong { /* Configura el texto de las fechas importantes */
+    display: block; /* Hace que ocupe una línea */
+    font-family: "Open Sans", sans-serif; /* Tipo de letra */
+    font-weight: bold; /* Hace el texto más grueso */
+    font-size: 1.2rem; /* Tamaño */
+    margin-top: 4px; /* Espacio superior */
+    text-align: center; /* Centra el texto */
+    color: #b11a1c; /* Color rojo */
+}
+
+
+/*-------------------- LÍNEA DEL TIEMPO --------------------*/
+.linea-tiempo { /* Configura la sección de la línea del tiempo */
+    width: 90%; /* Ancho */
+    margin: 50px auto; /* Espacio y centrado */
+    text-align: center; /* Centra el contenido */
+}
+
+
+/*-------------------- título de la línea del tiempo --------------------*/
+.linea-tiempo h2 { /* Configura el título */
+    font-family: "Rye", serif; /* Tipo de letra */
+    color: #0f321b; /* Color */
+    font-weight: 320; /* Grosor */
+    font-size: 2.5rem; /* Tamaño */
+    margin-bottom: 40px; /* Espacio inferior */
+}
+
+
+</style> <!-- Finaliza los estilos CSS -->
+
+</head> <!-- Finaliza la sección head -->
+
+
+<body> <!-- Inicio del contenido visible de la página -->
+
+
+<!-- ************** encabezado ************** -->
+<header> <!-- Contiene el encabezado de la página -->
+
+    <!-- ---------- bandera decorativa izquierda ---------- -->
     <img src="decoracion/banderas.png" alt="banderas decorativas" 
          style="position: absolute; top: -40px; left: -30px; height: 190px; transform: rotate(-7deg); z-index: 10;">
 
+    <!-- ---------- bandera decorativa derecha ---------- -->
     <img src="decoracion/banderas.png" alt="banderas decorativas" 
          style="position: absolute; top: -40px; left: 1100px; height: 190px; transform: rotate(20deg); z-index: 10;">
 
 
-    <div class="mi-encabezado">
+    <!-- ---------- contenido del encabezado ---------- -->
+    <div class="mi-encabezado"> <!-- Agrupa el contenido del encabezado -->
 
-        <h1>Fechas importantes</h1>
+        <h1>Fechas importantes</h1> <!-- Título principal -->
 
-        <p class="letra-rye"></p>
+        <p class="letra-rye"></p> <!-- Párrafo utilizado para el subtítulo -->
 
-    </div>
-</header>
+    </div> <!-- Finaliza el contenido del encabezado -->
 
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="fechas.html">Fechas</a>
-    <a href="personajes.html">Personajes</a>
-    <a href="historia.html">Historia</a>
-    <a href="datos.html">Datos y mitos</a>
-</nav>
-
-<div class="calendario">
+</header> <!-- Finaliza el encabezado -->
 
 
-<table>
-    <tr>
+<!-- ************** navegador ************** -->
+<nav> <!-- Contiene el menú de navegación -->
+
+    <!-- ---------- enlaces de navegación ---------- -->
+    <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+    <a href="fechas.html">Fechas</a> <!-- Enlace a la página de fechas -->
+    <a href="personajes.html">Personajes</a> <!-- Enlace a la página de personajes -->
+    <a href="historia.html">Historia</a> <!-- Enlace a la página de historia -->
+    <a href="datos.html">Datos y mitos</a> <!-- Enlace a la página de datos y mitos -->
+
+</nav> <!-- Finaliza el menú de navegación -->
+
+
+<!-- ******************** calendario ******************** -->
+<div class="calendario"> <!-- Contiene el calendario -->
+
+
+<table> <!-- Inicio de la tabla del calendario -->
+
+    <!-- ---------- nombres de los días ---------- -->
+    <tr> <!-- Fila de los días de la semana -->
         <th>LUNES</th>
         <th>MARTES</th>
         <th>MIÉRCOLES</th>
@@ -246,8 +308,10 @@ strong {
         <th>VIERNES</th>
         <th>SÁBADO</th>
         <th>DOMINGO</th>
-    </tr>
+    </tr> <!-- Fin de la fila -->
 
+
+    <!-- ---------- primera semana ---------- -->
     <tr>
         <td></td>
         <td>1</td>
@@ -258,6 +322,8 @@ strong {
         <td>6</td>
     </tr>
 
+
+    <!-- ---------- segunda semana ---------- -->
     <tr>
         <td>7</td>
         <td>8</td>
@@ -267,9 +333,11 @@ strong {
         <td>12</td>
         <td>13
         <br> 
-        <strong>DIA DE LOS NIÑOS HEROES</strong></td></td>
+        <strong>DIA DE LOS NIÑOS HEROES</strong></td>
     </tr>
 
+
+    <!-- ---------- tercera semana ---------- -->
     <tr>
         <td>14</td>
         <td>15
@@ -284,6 +352,8 @@ strong {
         <td>20</td>
     </tr>
 
+
+    <!-- ---------- cuarta semana ---------- -->
     <tr>
         <td>21</td>
         <td>22</td>
@@ -293,8 +363,11 @@ strong {
         <td>26</td>
         <td>27
         <br> 
-        <strong>CONSUMACION DE LA INDEPENDENCIA</strong></td></td>
+        <strong>CONSUMACION DE LA INDEPENDENCIA</strong></td>
+    </tr>
 
+
+    <!-- ---------- quinta semana ---------- -->
     <tr>
         <td>28
         <br> 
@@ -306,40 +379,48 @@ strong {
         <td></td>
         <td></td>
     </tr>
-</table>
 
-</div>
+</table> <!-- Finaliza la tabla -->
 
-<section class="linea-tiempo">
+</div> <!-- Finaliza el calendario -->
 
-<h2>Línea del tiempo</h2>
 
-<img src="imagenes/linea-tiempo.png" alt="linea del tiempo" 
-    style="height: 600px;">
+<!-- ******************** línea del tiempo ******************** -->
+<section class="linea-tiempo"> <!-- Contiene la sección de la línea del tiempo -->
 
-<img src="decoracion/fuegos-artificiales.png" alt="fuegos artificiales" 
+    <h2>Línea del tiempo</h2> <!-- Título de la sección -->
+
+    <!-- ---------- imagen de la línea del tiempo ---------- -->
+    <img src="imagenes/linea-tiempo.png" alt="linea del tiempo" 
+        style="height: 600px;">
+
+
+    <!-- ---------- decoración de fuegos artificiales ---------- -->
+    <img src="decoracion/fuegos-artificiales.png" alt="fuegos artificiales" 
          style="position: absolute; top: 500px; left: 200px; height: 115px; transform: rotate(0deg); z-index: 10;">
 
-    </div>
-
-</section>
+</section> <!-- Finaliza la sección de la línea del tiempo -->
 
 
-<footer>
+<!-- ******************** pie de página ******************** -->
+<footer> <!-- Contiene el pie de página -->
+
+    <!-- ---------- información del alumno ---------- -->
     <p>Ailyn Ramirez Villa</p>
     <p>24308051281329</p>
     <p>5 - J </p>
     <p> Programación</p>
 
+
+    <!-- ---------- decoraciones del pie de página ---------- -->
     <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores">
 
     <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores">
 
-</footer>
+</footer> <!-- Finaliza el pie de página -->
 
 
-</body>
-</html>
+</body> <!-- Finaliza el contenido visible -->
 
-
+</html> <!-- Finaliza el documento HTML -->
 
