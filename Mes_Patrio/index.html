@@ -1,224 +1,268 @@
+```html
+<!DOCTYPE html> <!-- Indica que el documento utiliza HTML5 -->
 
-<!DOCTYPE html>
-<html>
-<head>
+<html> <!-- Inicio del documento HTML -->
 
+<head> <!-- Contiene la información y configuraciones de la página -->
 
-<!-- --------------------tipo de letra rye----------------- -->
+<!-- -------------------- tipo de letra Rye -------------------- -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Rye&display=swap" rel="stylesheet">
-<!-- ------------------------------------------------------ -->  
-<style>
+<!-- ----------------------------------------------------------- -->  
 
-body {
-    margin: 0;
-     background-color: #f0eeea; /*--- color de fondo ---*/
+<style> <!-- Contiene los estilos CSS de la página -->
+
+
+/*-------------------- configuración general de la página --------------------*/
+body { /* body contiene todo el contenido visible de la página */
+    margin: 0; /* elimina el espacio que aparece alrededor de la página */
+    background-color: #f0eeea; /*--- color de fondo ---*/
 }
 
-   
-.mi-encabezado {
+
+/*-------------------- encabezado --------------------*/
+.mi-encabezado { /* configura el diseño del encabezado */
     background-color: #036436; /* color del encabezado */
 
-   /*---------- decoraciones del encabezado -------------*/
+    /*---------- decoraciones del encabezado -------------*/
     background-image: 
         url('decoracion/orilla.png'),  
         url('decoracion/orilla2.png');
  
-    background-repeat: no-repeat, no-repeat;
+    background-repeat: no-repeat, no-repeat; /* evita que las imágenes se repitan */
 
-    background-position: center top, center bottom;
+    background-position: center top, center bottom; /* coloca las decoraciones */
 
-    background-size: 100% 89%, 100% 55%;
- /*---------------------------------------------------*/
+    background-size: 100% 89%, 100% 55%; /* cambia el tamaño de las decoraciones */
+    /*---------------------------------------------------*/
    
-    padding: 5px 20px;  /* tamaño de letra del ecabezado*/
-    text-align: center;  /*se centra la letra */
+    padding: 5px 20px; /* espacio entre el contenido y los bordes */
+    text-align: center; /*se centra la letra */
     color: #ffffff; /* color de letra del encabezado*/
 }
 
+
 /*---- Tipo de letra del encabezado -----*/
-.mi-encabezado h1 {
-    margin: 0;
-    font-family: "Rye", serif; /*letra rye*/
+.mi-encabezado h1 { /* configura el título principal */
+    margin: 0; /* elimina el margen */
+    font-family: "Rye", serif; /*letra Rye*/
     font-weight: 400; /*grosor*/
-    font-style: normal;
+    font-style: normal; /* estilo normal de la letra */
     font-size: 6rem; /*tamaño*/
 }
 /*---------------------------------------*/
 
-/*-------------- letra rye -------------------*/
-.letra-rye {
-    font-family: "Rye", serif;
-    font-weight: 400;
-    font-size: 2.5rem;
-    margin-top: 5px;
-}
- /*--------------------------------------------*/
 
- /*-------- letra times new roman ------------*/  
-.letra-times {
-    font-family: "Times New Roman", serif;
-    font-weight: 400;
-    font-size: 2rem;
-    margin-top: 4px;
-    text-align: center;
+/*-------------- letra Rye -------------------*/
+.letra-rye { /* configura los textos que utilizan la letra Rye */
+    font-family: "Rye", serif; /* tipo de letra */
+    font-weight: 400; /* grosor */
+    font-size: 2.5rem; /* tamaño de letra */
+    margin-top: 5px; /* espacio superior */
 }
- /*--------------------------------------------*/
+/*--------------------------------------------*/
+
+
+/*-------- letra Times New Roman ------------*/  
+.letra-times { /* configura los textos con Times New Roman */
+    font-family: "Times New Roman", serif; /* tipo de letra */
+    font-weight: 400; /* grosor */
+    font-size: 2rem; /* tamaño de letra */
+    margin-top: 4px; /* espacio superior */
+    text-align: center; /* centra el texto */
+}
+/*--------------------------------------------*/
+
 
 /*----------------------- navegador -----------------------*/
-nav {
+nav { /* configura el menú de navegación */
     background-color: #f7f7f7; /*color de fondo*/
     border-bottom: 15px solid #f7f7f7; /* color de fondo de abajo*/
     border-top: 10px solid #f7f7f7; /* color de fondo de arriba */
     text-align: center; /* se centra */
     padding: 0; /* hace que no se agrupen los textos*/
 }
- /*--------------------------------------------------------*/
+/*--------------------------------------------------------*/
+
 
 /*--------------- botones del navegador ---------------*/
-nav a {
-    display: inline-block;
-    background-color: #c8d1d9;  /* color de los botones*/
+nav a { /* configura los enlaces del menú */
+    display: inline-block; /* permite dar tamaño y espacio a los enlaces */
+    background-color: #c8d1d9; /* color de los botones*/
     color: #000000; /* color de la letra de los botones*/
-    text-decoration: none;
+    text-decoration: none; /* quita el subrayado de los enlaces */
     font-family: Rye, sans-serif; /* tipo de letra */
-    font-weight: 400; 
-    font-size: 1.5rem;
+    font-weight: 400; /* grosor */
+    font-size: 1.5rem; /* tamaño de letra */
     padding: 10px 60px; /* aleja el contenido de los bordes */
     border-radius: 55px; /* se usa para redondear las esquinas */
-    margin: 0 20px; /* epacio de ariiba y de las orillas */
+    margin: 0 20px; /* espacio de arriba y de las orillas */
 }
- /*---------------------------------------------------*/
+/*---------------------------------------------------*/
 
- /*---------- cambio de color de los botones ------------*/
-   nav a:hover {
-       background-color: #f87778; /* color del boton en rojo */
-       color: #ffffff;  /* color de la letra blanco */
-   }
- /*------------------------------------------------------*/
 
- /*---------------------------------------------------*/
-.inicio {
+/*---------- cambio de color de los botones ------------*/
+nav a:hover { /* cambia el diseño cuando se pasa el cursor sobre el botón */
+    background-color: #f87778; /* color del botón en rojo */
+    color: #ffffff; /* color de la letra blanco */
+}
+/*------------------------------------------------------*/
+
+
+/*-------------------- información de inicio --------------------*/
+.inicio { /* organiza el contenido de la página de inicio */
     text-align: center; /* texto centrado */
-    max-width: 1000px; /* ancho de la pagina */
+    max-width: 1000px; /* ancho de la página */
     margin: 30px auto; /* espacio de arriba */
 }
- /*---------------------------------------------------*/
+/*---------------------------------------------------*/
 
- /*---------------------------------------------------*/
-.inicio img {
+
+/*-------------------- imagen de inicio --------------------*/
+.inicio img { /* configura la imagen de la página de inicio */
     height: 230px; /* altura */
-    display: block; /* espacio de imagenes y texto */
-    margin: 25px auto; 
-}
-/*---------------------------------------------------*/
-/*------------- espacio de parrafo ----------------------*/
-.inicio p {
-    margin: 20px auto;
-}
-/*---------------------------------------------------*/
-/*---------------------------------------------------*/
-footer {
-    position: relative;
-    background-color: #b11a1c;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    margin-top: 20px;
-    font-family: "Times New Roman", serif;
-    font-size: 1.7 rem;
+    display: block; /* hace que la imagen se comporte como un bloque */
+    margin: 25px auto; /* espacio alrededor de la imagen */
 }
 /*---------------------------------------------------*/
 
-/*----------------- espacio del pie de pagina ----------------*/
-footer p {
-    margin: 6px;
-}
-/*---------------------------------------------------*/
-/*------------- decoracion del pie de pagina -------------------*/
-.flor-izquierda {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 110px;
-}
-.flor-derecha {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 110px;
-    transform: rotate(180deg);
+
+/*------------- espacio de párrafo ----------------------*/
+.inicio p { /* configura los párrafos de inicio */
+    margin: 20px auto; /* espacio alrededor de los párrafos */
 }
 /*---------------------------------------------------*/
 
-</style>
-</head>
 
-<body>
+/*-------------------- pie de página --------------------*/
+footer { /* configura el pie de página */
+    position: relative; /* permite colocar las decoraciones dentro del pie */
+    background-color: #b11a1c; /* color de fondo */
+    color: white; /* color del texto */
+    text-align: center; /* centra el texto */
+    padding: 5px; /* espacio interno */
+    margin-top: 20px; /* espacio superior */
+    font-family: "Times New Roman", serif; /* tipo de letra */
+    font-size: 1.7 rem; /* tamaño de letra */
+}
+/*---------------------------------------------------*/
+
+
+/*----------------- espacio del pie de página ----------------*/
+footer p { /* configura los párrafos del pie de página */
+    margin: 6px; /* espacio entre los párrafos */
+}
+/*---------------------------------------------------*/
+
+
+/*------------- decoración del pie de página -------------------*/
+.flor-izquierda { /* configura la flor del lado izquierdo */
+    position: absolute; /* permite colocar la imagen en una posición específica */
+    bottom: 0; /* coloca la imagen en la parte inferior */
+    left: 0; /* coloca la imagen a la izquierda */
+    height: 110px; /* altura de la imagen */
+}
+
+.flor-derecha { /* configura la flor del lado derecho */
+    position: absolute; /* permite colocar la imagen en una posición específica */
+    bottom: 0; /* coloca la imagen en la parte inferior */
+    right: 0; /* coloca la imagen a la derecha */
+    height: 110px; /* altura de la imagen */
+    transform: rotate(180deg); /* gira la imagen */
+}
+/*---------------------------------------------------*/
+
+</style> <!-- Finaliza los estilos CSS -->
+
+</head> <!-- Finaliza la sección head -->
+
+
+<body> <!-- Inicio del contenido visible de la página -->
 
 
 <!-- ************** encabezado ************** -->
-<header>
+<header> <!-- Contiene el encabezado de la página -->
 
+    <!-- ---------- bandera decorativa izquierda ---------- -->
     <img src="decoracion/banderas.png" alt="banderas decorativas" 
          style="position: absolute; top: -40px; left: -30px; height: 190px; transform: rotate(-7deg); z-index: 10;">
 
-    <img src="decoracion/banderas.png" alt="benderas decorativas" 
+    <!-- ---------- bandera decorativa derecha ---------- -->
+    <img src="decoracion/banderas.png" alt="banderas decorativas" 
          style="position: absolute; top: -40px; left: 1100px; height: 190px; transform: rotate(20deg); z-index: 10;">
 
+    <!-- ---------- contenido del encabezado ---------- -->
+    <div class="mi-encabezado"> <!-- Agrupa el contenido del encabezado -->
 
-    <div class="mi-encabezado">
+        <h1>Septiembre</h1> <!-- Título principal de la página -->
 
-        <h1>Septiembre</h1>
+        <p class="letra-rye">Mes patrio</p> <!-- Párrafo que muestra el subtítulo -->
 
-        <p class="letra-rye">Mes patrio</p>
+    </div> <!-- Finaliza el contenido del encabezado -->
 
-    </div>
-</header>
+</header> <!-- Finaliza el encabezado -->
 <!-- ********************************************* -->
 
+
 <!-- ************** navegador ************** -->
-<nav>
-    <a href="index.html">Inicio</a>
-    <a href="fechas.html">Fechas</a>
-    <a href="personajes.html">Personajes</a>
-    <a href="historia.html">Historia</a>
-    <a href="datos.html">Datos y mitos</a>
-</nav>
+<nav> <!-- Contiene el menú de navegación -->
 
-<!-- ****************************** informacion de inicio ********************************************** -->
+    <!-- ---------- enlaces de navegación ---------- -->
+    <a href="index.html">Inicio</a> <!-- Enlace a la página de inicio -->
+    <a href="fechas.html">Fechas</a> <!-- Enlace a la página de fechas -->
+    <a href="personajes.html">Personajes</a> <!-- Enlace a la página de personajes -->
+    <a href="historia.html">Historia</a> <!-- Enlace a la página de historia -->
+    <a href="datos.html">Datos y mitos</a> <!-- Enlace a la página de datos y mitos -->
 
-<div class="inicio">
+</nav> <!-- Finaliza el menú de navegación -->
+<!-- ********************************************* -->
 
+
+<!-- ****************************** información de inicio ********************************************** -->
+
+<div class="inicio"> <!-- Agrupa la información de la página de inicio -->
+
+    <!-- ---------- primer texto de información ---------- -->
     <p class="letra-times">
         Septiembre es un mes importante para México, ya que durante este
         periodo se conmemoran acontecimientos importantes de nuestra historia.
-    </p>
+    </p> <!-- Finaliza el primer párrafo -->
 
-    <img src="imagenes/aguila.png" alt="Águila (escudo de mexico)"> <!-- ********* imagen de aguila ********** -->
 
+    <!-- ---------- imagen del águila ---------- -->
+    <img src="imagenes/aguila.png" alt="Águila (escudo de mexico)">
+
+
+    <!-- ---------- segundo texto de información ---------- -->
     <p class="letra-times">
         En este sitio web podrás conocer acontecimientos, personajes y curiosidades que forman parte
-         de nuestra historia y de las celebraciones del Mes Patrio.
-    </p>
+        de nuestra historia y de las celebraciones del Mes Patrio.
+    </p> <!-- Finaliza el segundo párrafo -->
 
-</div>
+</div> <!-- Finaliza la información de inicio -->
 <!-- **************************************************************************************************** -->
 
-<!-- ******************** pie de pagina ****************** -->
-<footer>
+
+<!-- ******************** pie de página ****************** -->
+<footer> <!-- Contiene el pie de página -->
+
+    <!-- ---------- información del alumno ---------- -->
     <p>Ailyn Ramirez Villa</p>
     <p>24308051281329</p>
     <p>5 - J </p>
-    <p> Programación</p>
+    <p>Programación</p>
 
+    <!-- ---------- decoraciones del pie de página ---------- -->
     <img class="flor-izquierda" src="decoracion/flores-pie.png" alt="Flores">
 
     <img class="flor-derecha" src="decoracion/flores-pie.png" alt="Flores">
 
-</footer>
+</footer> <!-- Finaliza el pie de página -->
 <!-- ************************************** -->
-    
-</body>
-</html>
+
+
+</body> <!-- Finaliza el contenido visible de la página -->
+
+</html> <!-- Finaliza el documento HTML -->
+```
